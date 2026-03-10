@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Station</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Internal CSS -->
+    <style>
+
+        .header-box {
+            display: inline-block;
+            padding: 15px 40px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+
+        button {
+            background-color: #ff6a00;
+            color: white;
+            border: none;
+            padding: 8px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header style="text-align:center; margin-top:30px;">
+    <div class="header-box">
+        <h1>Food Station</h1>
+        <p><i>food is fuel</i></p>
+    </div>
+</header>
+
+<nav style="text-align:center; margin-top:15px;">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="menu">
+
+    <!-- Pizza -->
+    <div class="card">
+        <h3>Pizza</h3>
+
+        Veg / Non-Veg:<br>
+        <input type="radio" name="pizza-type"> Veg
+        <input type="radio" name="pizza-type"> Non-Veg
+
+        <br><br>
+
+        Size:
+        <select onchange="setPrice(this,'pizza-price')">
+            <option value="0">Select Size</option>
+            <option value="150">Small</option>
+            <option value="210">Half</option>
+            <option value="500">Large</option>
+        </select>
+
+        <div class="price" id="pizza-price">Price: ₹0</div>
+
+        <button>Order Now</button>
+    </div>
+
+
+    <!-- Burger -->
+    <div class="card">
+        <h3>Burger</h3>
+
+        Veg / Non-Veg:<br>
+        <input type="radio" name="burger-type"> Veg
+        <input type="radio" name="burger-type"> Non-Veg
+
+        <br><br>
+
+        Size:
+        <select onchange="setPrice(this,'burger-price')">
+            <option value="0">Select Size</option>
+            <option value="150">Small</option>
+            <option value="210">Half</option>
+            <option value="500">Large</option>
+        </select>
+
+        <div class="price" id="burger-price">Price: ₹0</div>
+
+        <button>Order Now</button>
+    </div>
+
+
+    <!-- Pasta -->
+    <div class="card">
+        <h3>Pasta</h3>
+
+        Veg / Non-Veg:<br>
+        <input type="radio" name="pasta-type"> Veg
+        <input type="radio" name="pasta-type"> Non-Veg
+
+        <br><br>
+
+        Size:
+        <select onchange="setPrice(this,'pasta-price')">
+            <option value="0">Select Size</option>
+            <option value="150">Small</option>
+            <option value="210">Half</option>
+            <option value="500">Large</option>
+        </select>
+
+        <div class="price" id="pasta-price">Price: ₹0</div>
+
+        <button>Order Now</button>
+    </div>
+
+
+    <!-- Shawarma -->
+    <div class="card">
+        <h3>Shawarma</h3>
+
+        Veg / Non-Veg:<br>
+        <input type="radio" name="shawarma-type"> Veg
+        <input type="radio" name="shawarma-type"> Non-Veg
+
+        <br><br>
+
+        Size:
+        <select onchange="setPrice(this,'shawarma-price')">
+            <option value="0">Select Size</option>
+            <option value="150">Small</option>
+            <option value="210">Half</option>
+            <option value="500">Large</option>
+        </select>
+
+        <div class="price" id="shawarma-price">Price: ₹0</div>
+
+        <button>Order Now</button>
+    </div>
+
+</section>
+
+
+<script>
+
+function setPrice(selectElement, priceId)
+{
+    var price = selectElement.value;
+    document.getElementById(priceId).innerHTML = "Price: ₹" + price;
+}
+
+</script>
+
+</body>
+</html>

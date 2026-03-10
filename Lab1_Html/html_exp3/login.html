@@ -1,0 +1,70 @@
+<!DOCTYPE html> 
+<!-- Defines the document type -->
+
+<html>
+<head>
+    <!-- Title displayed in browser tab -->
+    <title> Comment Form</title>
+
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Main container that holds the form -->
+    <div class="container">
+
+        <!-- Heading of the form -->
+        <h2>Leave a Comment </h2>
+
+        <!-- Form starts here -->
+        
+        <form action="#" method="post">
+
+            <!-- Name Label -->
+            <label for="name">Your Name:</label>
+
+            <!-- Text input for Name -->
+            <!-- required attribute ensures the field is not empty -->
+            <input type="text" 
+                   id="name" 
+                   name="name"
+                   placeholder="Enter your name" 
+                   required>
+
+            <!-- Email Label -->
+            <label for="email">Your Email:</label>
+
+            <!-- Email input field -->
+            
+            <!-- required ensures field cannot be empty -->
+            <input type="email" 
+                   id="email" 
+                   name="email"
+                   placeholder="Enter your email" 
+                   required>
+
+            <!-- Comment Label -->
+            <label for="comment">Your Comment:</label>
+
+            <!-- Textarea for writing comment -->
+            
+            <textarea id="comment" 
+                      name="comment"
+                      placeholder="Share your thoughts..." 
+                      required>
+            </textarea>
+
+            <!-- Submit button -->
+            
+            <input type="submit" value="Post Comment ">
+
+        </form>
+        <!-- End of form -->
+
+    </div>
+    <!-- End of container -->
+
+</body>
+</html>

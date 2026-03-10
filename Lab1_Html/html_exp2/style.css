@@ -1,0 +1,82 @@
+/* External CSS */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+nav {
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+}
+
+nav a {
+    margin: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    color: #222;
+}
+
+.hero p {
+    color: #777;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    width: 160px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.card p {
+    color: #777;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+/* Vibrant gradient background */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+/* Footer styling */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 16px;
+    color: #333;
+}
