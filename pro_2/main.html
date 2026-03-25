@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!-- Defines the document type as HTML5 -->
+
+<html>
+<head>
+    <title>Styled Form</title> <!-- Title shown in browser tab -->
+
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Main heading of the page -->
+<h1>Form</h1>
+
+<!-- Starting of the form -->
+<form>
+
+    <!-- Name input field -->
+    <div>
+        <label for="name">Enter name:</label> <!-- Label for name -->
+        <input type="text" id="name" name="name" placeholder="Enter your name"> <!-- Text input -->
+    </div>
+
+    <!-- Email input field -->
+    <div>
+        <label for="email">Enter email:</label> <!-- Label for email -->
+        <input type="email" id="email" name="email" placeholder="Enter your email"> <!-- Email input -->
+    </div>
+
+    <!-- Phone number input field -->
+    <div>
+        <label for="phone">Enter phone:</label> <!-- Label for phone -->
+        <input type="number" id="phone" name="phone" placeholder="Enter your phone"> <!-- Number input -->
+    </div>
+
+    <!-- Password input field -->
+    <div>
+        <label for="password">Enter password:</label> <!-- Label for password -->
+        <input type="password" id="password" name="password"> <!-- Password input -->
+    </div>
+
+    <!-- Qualification dropdown selection -->
+    <div>
+        <label for="qualification">Select qualification:</label> <!-- Label for dropdown -->
+        <select id="qualification" name="qualification"> <!-- Dropdown menu -->
+            <option value="high school">High school</option>
+            <option value="degree">Degree</option>
+            <option value="phd">PhD</option>
+        </select>
+    </div>
+
+    <!-- Gender selection using radio buttons -->
+    <div>
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male <!-- Radio option 1 -->
+        <input type="radio" name="gender"> Female <!-- Radio option 2 -->
+        <input type="radio" name="gender"> Other <!-- Radio option 3 -->
+    </div>
+
+    <!-- Message text area -->
+    <div>
+        <label for="message">Message:</label> <!-- Label for textarea -->
+        <textarea id="message" name="message" rows="4"></textarea> <!-- Multi-line text input -->
+    </div>
+
+    <!-- Date of Birth selection -->
+    <div>
+        <label for="dob">Date of birth:</label> <!-- Label for date -->
+        <input type="date" id="dob" name="dob"> <!-- Date picker -->
+    </div>
+
+    <!-- Color picker input -->
+    <div>
+        <label for="favcolor">Choose color:</label> <!-- Label for color -->
+        <input type="color" id="favcolor" name="favcolor"> <!-- Color selector -->
+    </div>
+
+    <!-- Newsletter subscription checkbox -->
+    <div>
+        <label>
+            <input type="checkbox"> Subscribe to newsletter <!-- Checkbox option -->
+        </label>
+    </div>
+
+    <!-- Reset and Submit buttons -->
+    <div>
+        <input type="reset" value="Reset"> <!-- Resets form fields -->
+        <input type="submit" value="Submit"> <!-- Submits the form -->
+    </div>
+
+</form>
+<!-- End of form -->
+
+</body>
+</html>

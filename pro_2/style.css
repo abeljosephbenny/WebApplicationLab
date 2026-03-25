@@ -1,0 +1,96 @@
+/* ===== Body Background ===== */
+/* ===== Body Styling ===== */
+body {
+    font-family: Arial, sans-serif;
+
+    /* Correct way to add background image */
+    background-image: url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 40px;
+}
+/* ===== Heading ===== */
+h1 {
+    text-align: center;
+    color: #23a4ad;
+}
+
+/* ===== Form Box ===== */
+form {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    border: 2px solid #4CAF50;   /* Green border */
+    border-radius: 10px;         /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Spacing between fields ===== */
+form div {
+    margin-bottom: 15px;
+}
+
+/* ===== Labels ===== */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* ===== Inputs, Select, Textarea ===== */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ===== Focus Effect ===== */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* ===== Buttons ===== */
+input[type="submit"],
+input[type="reset"] {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Submit button */
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Reset button */
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Hover effect */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"]:hover {
+    background-color: #d32f2f;
+}
